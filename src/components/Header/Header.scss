@@ -1,0 +1,39 @@
+.header{
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__icons{
+        width: 30px;
+        height: 30px;
+        gap: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &__lef-l{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-transform: uppercase;
+    }
+    &__link{
+        color: black;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__links{
+        text-transform: uppercase;
+        font-size: 500;
+        font-family: poppins;
+        text-decoration: none;
+        color: black;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+   
+
+}

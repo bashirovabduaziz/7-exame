@@ -7,10 +7,13 @@ import Cart from './pages/Cart/Cart'
 import Wishlist from './pages/Wishlist/Wishlist'
 import Login from './pages/Login/Login'
 import Admin from './pages/Admin/Admin'
+import Header from './components/Header/Header'
 
 const App = () => {
   return (
     <>
+    <div className='container'>
+      <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/contact' element={<Contact />}/>
@@ -19,6 +22,7 @@ const App = () => {
       <Route path='/login' element={<Login />}/>
       <Route path='/admin' element={<Admin />}/>
     </Routes>
+    </div>
     </>
   )
 }
