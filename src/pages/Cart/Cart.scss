@@ -1,0 +1,90 @@
+.cart{
+    margin-top: 100px;
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 900px;
+        height: 130px;
+        margin-top: 20px;
+        margin-left: 150px;
+        border: 3px solid rgba(51, 160, 255, 1);
+        border-radius: 10px;
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+     &__title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100px;
+        margin-left: -30px;
+     }
+     &__inc{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(246, 247, 248, 1);
+        width: 70px;
+        height: 35px;
+        border-radius: 7px;
+     }
+     &__plus{
+        border: none;
+        background: white;
+        color: rgba(51, 160, 255, 1) ;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        background-color:rgba(246, 247, 248, 1) ;
+     }
+     &__del{
+        background: white;
+        border: none;
+        color: red;
+     }
+     &__titles{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+     }
+     &__tt{
+        display: flex;
+        margin-right: 50px;
+    }
+    &__p{
+        font-family: poppins;
+        font-weight: 500;
+        color: rgba(34, 38, 42, 1);
+    }
+    &__p1{
+        font-family: poppins;
+        font-weight: 500;
+        color: rgba(34, 38, 42, 1);
+        margin-left: 170px;
+    }
+    &__p2{
+        font-family: poppins;
+        font-weight: 500;
+        color: rgba(34, 38, 42, 1);
+        margin-left: 100px;
+    }
+    &__p3{
+        font-family: poppins;
+        font-weight: 500;
+        color: rgba(34, 38, 42, 1);
+        margin-left: 110px;
+    }
+    &__price{
+        width: 80px;
+        color: black;
+        font-family: poppins;
+        
+    }
+}

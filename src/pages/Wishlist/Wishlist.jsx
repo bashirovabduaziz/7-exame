@@ -9,7 +9,7 @@ const Wishlist = () => {
     <>
       {
         wishes.length ? 
-        <Products title="Sevimlilar" data={wishes}/>
+        <Products data={wishes}/>
         :
         <h2>Empty</h2>
         

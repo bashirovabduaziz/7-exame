@@ -6,6 +6,8 @@ import { BsCart2 } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleToWishes } from "../../context/wishlistSlice"
 import cartSlice, { addToCart } from "../../context/cartSlice";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -20,7 +22,9 @@ let products = data?.map((el) => <div key={el.id} className='product__cart'>
     <img src={el.thumbnail} alt="" className='product__img'/>
    
     <div className='product__left'>
+        <Link to={`/single-product/${el.id}`} className='product__link'>
     <p className='product__title'>{el.title}</p>
+    </Link>
       
     <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
 
