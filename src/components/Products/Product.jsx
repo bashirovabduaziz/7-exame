@@ -5,6 +5,8 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleToWishes } from "../../context/wishlistSlice"
+import cartSlice, { addToCart } from "../../context/cartSlice";
+
 
 
 
@@ -33,7 +35,9 @@ let products = data?.map((el) => <div key={el.id} className='product__cart'>
                 <FaRegHeart className='product__wish' />
             }
         </button>
-       <BsCart2 />
+        <button className='product__like' onClick={() => dispatch(addToCart(el))}>
+       <BsCart2 className='product__wish'/>
+       </button>
     </div>
     </div>
     </div>

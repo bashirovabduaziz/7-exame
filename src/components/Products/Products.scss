@@ -55,6 +55,7 @@
     border-radius: 5px;
     padding: 7px 10px;
     cursor: pointer;
+    margin-left: 10px;
   }
   &__hiddens{
    margin-left: -128px;     
@@ -63,10 +64,11 @@
     width: 200px;
     height: 180px;
     border-radius: 10px;
-    padding: 70px;
+    padding: 70px 50px;
     visibility: hidden;
+    display: flex;
+    align-items: center;
     
-
 }
   &__wish{
      width: 15px;
