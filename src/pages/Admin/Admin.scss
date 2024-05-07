@@ -1,0 +1,25 @@
+.admin{
+    .admin__container{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    &__title{
+        font-family: poppins;
+        font-weight: 600;
+        color: rgba(34, 38, 42, 1);
+      }
+      &__text{
+        font-family: poppins;
+        font-weight: 400;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 1);
+      }
+      &__input{
+        margin-top: 20px !important;
+      }
+      &__btn{
+        width: 220px !important;
+        height: 40px !important;
+      }
+
+}

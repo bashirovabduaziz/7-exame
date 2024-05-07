@@ -24,14 +24,16 @@ const Header = () => {
                 </div>
                 <div className="header__right-b">
                 <div className="header__lef-r">
-                    <NavLink className="header__link" to={'/admin'}>
+                    <NavLink className="header__link" to={'/login'}>
                        <MdPersonOutline  className='header__icons' />
                        </NavLink>
                        <NavLink to={'/wishlist'} className='header__link'><FaRegHeart className='header__icons' /></NavLink>
                           <NavLink to={'cart'} className='header__link'>
                        <BsCart2 className='header__icons' />
                           </NavLink>
+                          <NavLink to={'/search'} className='header__link'>
                        <IoSearchSharp className='header__icons' />
+                       </NavLink>
                     </div>
 
                 </div>

@@ -1,0 +1,90 @@
+.single{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    &__limg{
+        width: 80px;
+        height: 120px;
+    }
+    &__limages{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    &__image{
+        width: 500px;
+        height: 250px;
+    }
+    &__prices{
+        display: flex;
+        align-items: center;
+    }
+    &__hr{
+        width: 400px;
+        margin-top: 30px;
+    }
+    &__title{
+        font-family: poppins;
+        font-weight: 600;
+        color: rgba(34, 38, 42, 1);
+    }
+    &__inc{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(246, 247, 248, 1);
+        width: 70px;
+        height: 35px;
+        border-radius: 7px;
+        margin-top: 20px;
+     }
+     &__plus{
+        border: none;
+        background: white;
+        color: rgba(51, 160, 255, 1) ;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        background-color:rgba(246, 247, 248, 1) ;
+     }
+     &__prices{
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+      
+    }
+    &__price{
+        font-family: poppins;
+        font-weight: 700;
+        color: rgba(64, 191, 255, 1);
+    }
+    &__del{
+        font-family: poppins;
+        font-weight: 400;
+        color: rgba(144, 152, 177, 1);
+    }
+    &__s{
+        font-family: poppins;
+        font-weight: 700;
+        color: rgba(251, 113, 129, 1);
+        margin-left: 10px;
+    }
+    &__br{
+        font-family: poppins;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    &__hh{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    &__p{
+        font-family: poppins;
+        font-weight: 400;
+        color:rgba(64, 191, 255, 1) ;
+    }
+}

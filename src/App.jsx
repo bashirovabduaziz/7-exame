@@ -9,6 +9,8 @@ import Login from './pages/Login/Login'
 import Admin from './pages/Admin/Admin'
 import Header from './components/Header/Header'
 import Single from './pages/Single/Single'
+import Search from './pages/search/Search'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -23,7 +25,9 @@ const App = () => {
       <Route path='/wishlist' element={<Wishlist />}/>
       <Route path='/login' element={<Login />}/>
       <Route path='/admin' element={<Admin />}/>
+      <Route path='/search' element={<Search />} />
     </Routes>
+    <Footer />
     </div>
     </>
   )
