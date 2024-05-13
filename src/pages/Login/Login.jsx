@@ -1,32 +1,52 @@
-import { Button, TextField } from '@mui/material'
-import React from 'react'
-import './Login.scss'
-import { NavLink } from 'react-router-dom'
+import { Button, TextField } from '@mui/material';
+import React, { useState } from 'react';
 
-const Login = () => {
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './Login.scss'
+
+function Login() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    if (username === 'Abduaziz' && password === '8486') {
+      window.location.href = '/admin';
+      toast.success("Hush kelibsiz")
+    } else {
+      toast.error("Hatooooo!!!");
+
+    }
+  };
+
   return (
     <div className='login'>
-      <div className="login__container">
-              <TextField id="outlined-basic" label="Username" variant="outlined" className='login__input' />
-              <br />
-              
-              <TextField
-          id="outlined-password-input"
-          label="Password"
-          type="password"
-          autoComplete="current-password"
-          className='login__input'
-        />               
-        <br />
-        <NavLink to={'/admin'}>
-        <Button variant="contained" className='login__input login__btn' >Login</Button>
-               
-        </NavLink>
-            
-              </div>
+     <div className='login__container'>
+      <TextField 
+      id="outlined-basic" 
+      label="Username"
+       variant="outlined"
+       className='login__input'
+        value={username} 
+        onChange={(e) => setUsername(e.target.value)} 
+      />
+      <br />
+      <TextField 
+      id="filled-basic" 
+      label="Password" 
+      variant="outlined"
+        className='login__input'
+        type="password" 
+        value={password} 
+        onChange={(e) => setPassword(e.target.value)} 
+      />
+      <br />
+      <Button  variant="contained" className='login__btn' onClick={handleLogin}>Login</Button>
+      </div>
+      <ToastContainer />
 
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

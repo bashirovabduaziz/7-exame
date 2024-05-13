@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100% !important;
     margin: 0 auto;
+    padding: 0 10px;
 }
 a.active{
    color: rgba(51, 160, 255, 1);

@@ -2,6 +2,9 @@ import React from 'react'
 import './Admin.scss'
 import { Button } from '@mui/material'
 import { NavLink } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Admin = () => {
@@ -16,6 +19,7 @@ const Admin = () => {
         <Button variant="contained" className='admin__input admin__btn' >Log Out</Button>
                
         </NavLink>
+        <ToastContainer />
         </div>
     </div>
   )

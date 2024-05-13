@@ -10,15 +10,18 @@ import Cartss from '../../assets/shoess.png'
 
 const Home = () => {
   const [data , setData] = useState([])
+  const [loading , setLoading] = useState(true)
    
 
   useEffect(()=>{
     axios
         .get("products")
-        .then(res => {setData(res.data.products)})
+        .then(res => {setData(res.data.products);setLoading(false)})
         .catch(res => console.log(res))
 }, [])
-
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
 
   return (
     <div className='home'>
@@ -34,7 +37,7 @@ const Home = () => {
               <li className="home__links"><a href="#" className='home__link'>Sunglasses</a></li>
             </ul>
 
-      <Product  data={data.slice(0,8)} />
+      <Product  data={data.slice(0,8)} loading={loading} />
 
       <div className="home__container">
           <img src={Bnr} alt="" className="home__image" />

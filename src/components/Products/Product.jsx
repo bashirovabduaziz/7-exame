@@ -1,4 +1,4 @@
-import { Rating } from '@mui/material';
+import { CircularProgress, Rating, colors } from '@mui/material';
 import React from 'react'
 import './Products.scss'
 import { FaHeart, FaRegHeart } from "react-icons/fa";
@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Product = ({data}) => {
+const Product = ({data,loading}) => {
     const dispatch = useDispatch()
     const wishes = useSelector(state => state.wishlist.value)
 
@@ -47,10 +47,16 @@ let products = data?.map((el) => <div key={el.id} className='product__cart'>
     </div>
 </div>)
 
+
   return (
     <div className='product'>
         <div className='product__container'>
-        {products}
+        {
+            loading ? (
+                <CircularProgress color="inherit" sx={{color: 'rgba(64, 191, 255, 1)'}} />
+            ) : (
+        products
+        )}
         </div>
     </div>
 
